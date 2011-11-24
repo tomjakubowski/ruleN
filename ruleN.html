@@ -47,16 +47,20 @@
         </tbody>
       </table>
     </section>
-    <section id="initial">
-      <h1>initial conditions</h1>
-    </section>
     <section id="simulation">
       <h1>simulation</h1>
       <form id="simulation-form">
         <fieldset>
+          <legend>initial conditions</legend>
+          <label for="cells">number of cells: </label>
+          <input type="text" name="cells" value="60" id="cell-count"><br>
+          <label for="initialState">initial state (will be left-padded with 0s):</label><br />
+          <input type="text" name="initialState" value="" id="initial-state"><input type="button" value="randomize!">
+        </fieldset>
+        <fieldset>
           <legend>parameters</legend>
           <label for="steps">number of steps: </label>
-          <input type="text" name="steps" value="100" id="simulation-steps">
+          <input type="text" name="steps" value="60" id="simulation-steps">
         </fieldset>
         <input type="submit" value="run simulation">
       </form>
