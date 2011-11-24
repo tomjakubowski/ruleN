@@ -4,20 +4,21 @@
     <link rel="stylesheet" href="ruleN.css" />
     <script src="jquery-1.7.1.min.js"></script>
     <script src="underscore-min.js"></script>
+    <script src="underscore.string.min.js"></script>
     <script src="ruleN.js"></script>
     <title>ruleN</title>
   </head>
   <body>
     <header>
       <h1>ruleN</h1>
-      <small>elementary cellular automaton play thing. requires javascript.</small>
+      <small>elementary cellular automaton plaything. requires javascript. runs slowly for now.</small>
     </header>
     <section id="rule">
       <h1>rule definition</h1>
       <form id="rule-form">
         <fieldset>
           <label for="ruleNumber">rule number: </label><input type="text" name="ruleNumber" value="110" id="rule-number">
-          <input type="submit" value="fill definition table">
+          <input type="submit" value="preview definition table">
         </fieldset>
       </form>
       <table id="rule-definition">
@@ -55,7 +56,8 @@
           <label for="cells">number of cells: </label>
           <input type="text" name="cells" value="60" id="cell-count"><br>
           <label for="initialState">initial state (will be left-padded with 0s):</label><br />
-          <input type="text" name="initialState" value="" id="initial-state"><input type="button" value="randomize!">
+          <input type="text" name="initialState" value="1" id="initial-state">
+          <input type="button" value="randomize!" id="randomize-initial">
         </fieldset>
         <fieldset>
           <legend>parameters</legend>
@@ -67,20 +69,10 @@
     </section>
     <section id="results">
       <h1>results</h1>
-      <!-- <table id="states">
+      <table id="trajectory">
         <tbody>
-          <tr>
-            <td class="on"></td>
-            <td class="off"></td>
-            <td class="on"></td>
-            <td class="off"></td>
-            <td class="on"></td>
-            <td class="off"></td>
-            <td class="on"></td>
-            <td class="off"></td>
-          </tr>
         </tbody>
-      </table> -->
+      </table>
     </section>
   </body>
 </html>

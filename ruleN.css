@@ -8,19 +8,20 @@ body {
   display: none;
 }
 
-#states {
+#trajectory {
   border-spacing: 0;
 }
 
-#states td {
-  width: 10px;
-  height: 10px;
+#trajectory td {
+  width: 4px;
+  height: 4px;
+  padding: 0;
 }
 
 td.on {
-  background-color: #ccc;
+  background-color: #000;
 }
 
 td.off {
-  background-color: #000;
+  background-color: #ccc;
 }
