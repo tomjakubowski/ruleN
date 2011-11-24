@@ -29,4 +29,9 @@ $(document).ready(function() {
     });
     return false;
   });
+
+  $('#simulation-form').submit(function() {
+    $('#results').show();
+    return false;
+  });
 });
