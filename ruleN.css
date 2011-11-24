@@ -1,0 +1,26 @@
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  width: 600px;
+  margin: auto;
+}
+
+#results {
+  display: none;
+}
+
+#states {
+  border-spacing: 0;
+}
+
+#states td {
+  width: 10px;
+  height: 10px;
+}
+
+td.on {
+  background-color: #ccc;
+}
+
+td.off {
+  background-color: #000;
+}

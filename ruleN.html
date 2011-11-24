@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="ruleN.css" />
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="underscore-min.js"></script>
+    <script src="ruleN.js"></script>
+    <title>ruleN</title>
+  </head>
+  <body>
+    <header>
+      <h1>ruleN</h1>
+      <small>elementary cellular automaton play thing</small>
+    </header>
+    <section id="rule">
+      <h1>rule definition</h1>
+      <form>
+        <fieldset>
+          <label for="ruleNumber">rule number: </label><input type="text" name="ruleNumber" value="110" id="ruleNumber">
+          <input type="submit" value="fill definition table">
+        </fieldset>
+      </form>
+      <table>
+        <thead>
+          <th>current pattern</th>
+          <th>111</th>
+          <th>110</th>
+          <th>101</th>
+          <th>100</th>
+          <th>011</th>
+          <th>010</th>
+          <th>001</th>
+          <th>000</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>new state for center cell</th>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="initial">
+      <h1>initial conditions</h1>
+    </section>
+    <section id="results">
+      <h1>results</h1>
+      <!-- <table id="states">
+        <tbody>
+          <tr>
+            <td class="on"></td>
+            <td class="off"></td>
+            <td class="on"></td>
+            <td class="off"></td>
+            <td class="on"></td>
+            <td class="off"></td>
+            <td class="on"></td>
+            <td class="off"></td>
+          </tr>
+        </tbody>
+      </table> -->
+    </section>
+  </body>
+</html>
