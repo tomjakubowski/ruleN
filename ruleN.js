@@ -84,6 +84,7 @@ $(document).ready(function() {
 
   $('#simulation-form').submit(function() {
     $('#results').show();
+    $('#results').append('<p id="busy">reticulating splines ...</p>');
     $('#trajectory tbody').empty();
 
     // TODO: verify simulation parameters
@@ -105,6 +106,7 @@ $(document).ready(function() {
         });
         frame = run.nextState();
       });
+      $('#busy').remove();
     }, 0);
     return false;
   });
